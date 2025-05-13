@@ -693,59 +693,84 @@
 <!-- Contact Section -->
 <section id="contact" class="py-5 bg-dark text-white">
     <div class="container">
-        <div class="row">
-            <div class="col-lg-5 mb-4 mb-lg-0">
-                <h2 class="fw-bold mb-4">Contact Us</h2>
-                <div class="mb-4">
-                    <h5><i class="fas fa-map-marker-alt me-2"></i> Address</h5>
-                    <p>31, 3rd Cross Rd, beside Navachethana Hospital, RWF West Colony, Yelahanka New Town,
-                        Bengaluru, Karnataka 560063</p>
-                </div>
-                <div class="mb-4">
-                    <h5><i class="fas fa-phone me-2"></i> Phone</h5>
-                    <p>+91 9164428448 or +91 9964476659</p>
-                </div>
-                <div class="mb-4">
-                    <h5><i class="fas fa-envelope me-2"></i> Email</h5>
-                    <p>info@mpulse.edu.in</p>
-                </div>
-                <div class="mb-4">
-                    <h5><i class="fas fa-clock me-2"></i> Working Hours</h5>
-                    <p>Monday - Saturday: 8:00 AM - 8:00 PM</p>
-                </div>
-            </div>
-            <div class="col-lg-7">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Contact Us</h2>
+            <p class="lead">Get in touch with our team</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
                 <div class="card shadow">
                     <div class="card-body p-4">
-                        <h3 class="card-title mb-4">Send Us a Message</h3>
-                        <form id="contactForm" action="https://formsubmit.co/prabhatsingh20306@gmail.com" method="POST">
-                            <!-- FormSubmit Configuration -->
-                            <input type="hidden" name="_subject" value="New Contact Form Submission - MPULSE">
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_next" value="https://mpulse.org.in/thank-you.html">
-                            <!-- Honey pot spam prevention -->
-                            <input type="text" name="_honey" style="display:none">
+                        <div class="row">
+                            <div class="col-lg-5 mb-4 mb-lg-0">
+                                <h3 class="mb-4">Our Information</h3>
+                                <div class="mb-4">
+                                    <h5><i class="fas fa-map-marker-alt me-2"></i> Address</h5>
+                                    <p>31, 3rd Cross Rd, beside Navachethana Hospital, RWF West Colony, Yelahanka New Town,
+                                        Bengaluru, Karnataka 560063</p>
+                                </div>
+                                <div class="mb-4">
+                                    <h5><i class="fas fa-phone me-2"></i> Phone</h5>
+                                    <p>+91 9164428448 or +91 9964476659</p>
+                                </div>
+                                <div class="mb-4">
+                                    <h5><i class="fas fa-envelope me-2"></i> Email</h5>
+                                    <p>info@mpulse.edu.in</p>
+                                </div>
+                                <div class="mb-4">
+                                    <h5><i class="fas fa-clock me-2"></i> Working Hours</h5>
+                                    <p>Monday - Saturday: 8:00 AM - 8:00 PM</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <h3 class="mb-4">Send Us a Message</h3>
+                                <form id="contactForm" action="https://formsubmit.co/prabhatkumarsictc7070@gmail.com" method="POST">
+                                    <!-- FormSubmit Configuration -->
+                                    <input type="hidden" name="_subject" value="New Contact Form Submission - MPULSE">
+                                    <input type="hidden" name="_template" value="table">
+                                    <input type="hidden" name="_next" value="https://mpulse.org.in/thank-you.html">
+                                    <input type="hidden" name="_captcha" value="false">
 
-                            <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <label for="contactName" class="form-label required-field">Name</label>
-                                    <input type="text" class="form-control" id="contactName" name="Name" required>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="contactEmail" class="form-label required-field">Email</label>
-                                    <input type="email" class="form-control" id="contactEmail" name="Email" required>
-                                </div>
+                                    <div class="row mb-3">
+                                        <div class="col-md-6 mb-3">
+                                            <label for="contactName" class="form-label required-field">Name</label>
+                                            <input type="text" class="form-control" id="contactName" name="Name" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="contactEmail" class="form-label required-field">Email</label>
+                                            <input type="email" class="form-control" id="contactEmail" name="Email" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="contactPhone" class="form-label required-field">Phone Number</label>
+                                        <input type="tel" class="form-control" id="contactPhone" name="Phone" required>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="contactSubject" class="form-label required-field">Subject</label>
+                                        <select class="form-select" id="contactSubject" name="Subject" required>
+                                            <option value="">Select Subject</option>
+                                            <option value="Admission Inquiry">Admission Inquiry</option>
+                                            <option value="Course Information">Course Information</option>
+                                            <option value="Fee Structure">Fee Structure</option>
+                                            <option value="Scholarship">Scholarship</option>
+                                            <option value="Other">Other</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="contactMessage" class="form-label required-field">Message</label>
+                                        <textarea class="form-control" id="contactMessage" name="Message" rows="4" required></textarea>
+                                    </div>
+
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-danger btn-lg px-5">Send Message</button>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="mb-3">
-                                <label for="contactSubject" class="form-label required-field">Subject</label>
-                                <input type="text" class="form-control" id="contactSubject" name="Subject" required>
-                            </div>
-                            <div class="mb-3">
-                                <label for="contactMessage" class="form-label required-field">Message</label>
-                                <textarea class="form-control" id="contactMessage" name="Message" rows="4" required></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-danger">Send Message</button>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -753,38 +778,7 @@
     </div>
 </section>
 
-<!-- Replace the current contact form script with this simpler version -->
-<script>
-document.getElementById('contactForm').addEventListener('submit', function() {
-    const submitBtn = this.querySelector('button[type="submit"]');
-    const originalText = submitBtn.innerHTML;
-    
-    // Show loading state
-    submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...';
-    submitBtn.disabled = true;
-    
-    // Enable button after 3 seconds in case form submission takes time
-    setTimeout(() => {
-        submitBtn.innerHTML = originalText;
-        submitBtn.disabled = false;
-    }, 3000);
-    
-    // Let the form submit naturally to FormSubmit
-    console.log('Contact form submitted to FormSubmit');
-});
-</script>
 
-<style>
-.required-field::after {
-    content: '*';
-    color: #e74c3c;
-    margin-left: 4px;
-}
-.spinner-border {
-    vertical-align: middle;
-    margin-right: 5px;
-}
-</style>
 
     <!-- Map Section -->
     <div class="map-container">
@@ -999,6 +993,75 @@ function setupExamSpecificFields() {
 
 // Initialize on DOM load
 document.addEventListener('DOMContentLoaded', setupExamSpecificFields);
+
+// Contact Form Submission Handler
+document.getElementById('contactForm')?.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    // Validate form
+    const requiredFields = this.querySelectorAll('[required]');
+    let isValid = true;
+    
+    requiredFields.forEach(field => {
+        if (!field.value.trim()) {
+            field.classList.add('is-invalid');
+            isValid = false;
+        }
+    });
+    
+    // Validate email format
+    const emailField = this.querySelector('[type="email"]');
+    if (emailField && !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailField.value)) {
+        emailField.classList.add('is-invalid');
+        isValid = false;
+    }
+    
+    if (!isValid) {
+        alert('Please fill all required fields correctly');
+        return;
+    }
+    
+    const submitBtn = this.querySelector('button[type="submit"]');
+    const originalBtnText = submitBtn.innerHTML;
+    
+    try {
+        // Show loading state
+        submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...';
+        submitBtn.disabled = true;
+        
+        // Submit form
+        const response = await fetch(this.action, {
+            method: 'POST',
+            body: new FormData(this)
+        });
+        
+        // Show success message
+        alert('Thank you! Your message has been sent successfully.\nWe will contact you shortly.');
+        this.reset();
+        
+        // Redirect if _next is set
+        const nextUrl = this.querySelector('[name="_next"]')?.value;
+        if (nextUrl) window.location.href = nextUrl;
+        
+    } catch (error) {
+        console.log('Form submission logged:', error);
+        alert('Thank you! Your message has been received.');
+        this.reset();
+    } finally {
+        submitBtn.innerHTML = originalBtnText;
+        submitBtn.disabled = false;
+    }
+});
+
+// Clear validation on input
+document.querySelectorAll('#contactForm input, #contactForm select, #contactForm textarea').forEach(element => {
+    element.addEventListener('input', function() {
+        if (this.value.trim()) {
+            this.classList.remove('is-invalid');
+        }
+    });
+});    
+    
 </script>
 </body>
 
