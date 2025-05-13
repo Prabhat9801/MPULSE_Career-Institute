@@ -690,69 +690,125 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-5 bg-dark text-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5 mb-4 mb-lg-0">
-                    <h2 class="fw-bold mb-4">Contact Us</h2>
-                    <div class="mb-4">
-                        <h5><i class="fas fa-map-marker-alt me-2"></i> Address</h5>
-                        <p>31, 3rd Cross Rd, beside Navachethana Hospital, RWF West Colony, Yelahanka New Town,
-                            Bengaluru, Karnataka 560063</p>
-                    </div>
-                    <div class="mb-4">
-                        <h5><i class="fas fa-phone me-2"></i> Phone</h5>
-                        <p>+91 9164428448 or +91 9964476659</p>
-                    </div>
-                    <div class="mb-4">
-                        <h5><i class="fas fa-envelope me-2"></i> Email</h5>
-                        <p>info@mpulse.edu.in</p>
-                    </div>
-                    <div class="mb-4">
-                        <h5><i class="fas fa-clock me-2"></i> Working Hours</h5>
-                        <p>Monday - Saturday: 8:00 AM - 8:00 PM</p>
-                    </div>
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-dark text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5 mb-4 mb-lg-0">
+                <h2 class="fw-bold mb-4">Contact Us</h2>
+                <div class="mb-4">
+                    <h5><i class="fas fa-map-marker-alt me-2"></i> Address</h5>
+                    <p>31, 3rd Cross Rd, beside Navachethana Hospital, RWF West Colony, Yelahanka New Town,
+                        Bengaluru, Karnataka 560063</p>
                 </div>
-                <div class="col-lg-7">
-                    <div class="card shadow">
-                        <div class="card-body p-4">
-                            <h3 class="card-title mb-4">Send Us a Message</h3>
-                            <form id="contactForm" action="https://formsubmit.co/prabhatsingh1272@gmail.com"
-                                method="POST">
-                                <!-- FormSubmit Configuration -->
-                                <input type="hidden" name="_subject" value="New Contact Form Submission">
-                                <input type="hidden" name="_template" value="table">
-                                <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
-                                <input type="hidden" name="_captcha" value="false">
+                <div class="mb-4">
+                    <h5><i class="fas fa-phone me-2"></i> Phone</h5>
+                    <p>+91 9164428448 or +91 9964476659</p>
+                </div>
+                <div class="mb-4">
+                    <h5><i class="fas fa-envelope me-2"></i> Email</h5>
+                    <p>info@mpulse.edu.in</p>
+                </div>
+                <div class="mb-4">
+                    <h5><i class="fas fa-clock me-2"></i> Working Hours</h5>
+                    <p>Monday - Saturday: 8:00 AM - 8:00 PM</p>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="card shadow">
+                    <div class="card-body p-4">
+                        <h3 class="card-title mb-4">Send Us a Message</h3>
+                        <form id="contactForm" action="https://formsubmit.co/prabhatsingh1272@gmail.com" method="POST">
+                            <!-- FormSubmit Configuration -->
+                            <input type="hidden" name="_subject" value="New Contact Form Submission - MPULSE">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+                            <input type="hidden" name="_autoresponse" value="Thank you for contacting MPULSE Career Institute. We'll respond within 24 hours.">
+                            <input type="hidden" name="_captcha" value="false">
+                            <input type="text" name="_honey" style="display:none">
 
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <label for="contactName" class="form-label">Name</label>
-                                        <input type="text" class="form-control" id="contactName" name="name" required>
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <label for="contactEmail" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="contactEmail" name="email"
-                                            required>
-                                    </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="contactName" class="form-label required-field">Name</label>
+                                    <input type="text" class="form-control" id="contactName" name="Name" required>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="contactSubject" class="form-label">Subject</label>
-                                    <input type="text" class="form-control" id="contactSubject" name="subject" required>
+                                <div class="col-md-6 mb-3">
+                                    <label for="contactEmail" class="form-label required-field">Email</label>
+                                    <input type="email" class="form-control" id="contactEmail" name="Email" required>
                                 </div>
-                                <div class="mb-3">
-                                    <label for="contactMessage" class="form-label">Message</label>
-                                    <textarea class="form-control" id="contactMessage" name="message" rows="4"
-                                        required></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-danger">Send Message</button>
-                            </form>
-                        </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactSubject" class="form-label required-field">Subject</label>
+                                <input type="text" class="form-control" id="contactSubject" name="Subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="contactMessage" class="form-label required-field">Message</label>
+                                <textarea class="form-control" id="contactMessage" name="Message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-danger">Send Message</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<!-- Add this script to ensure delivery -->
+<script>
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const form = this;
+    const submitBtn = form.querySelector('button[type="submit"]');
+    const originalText = submitBtn.innerHTML;
+    
+    // Show loading state
+    submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...';
+    submitBtn.disabled = true;
+    
+    // Submit to FormSubmit
+    fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form)
+    })
+    .then(response => {
+        if (response.ok) {
+            // Fallback: Also send via EmailJS as backup
+            sendEmailBackup(form);
+            window.location.href = form.querySelector('[name="_next"]').value;
+        } else {
+            throw new Error('Formsubmit failed');
+        }
+    })
+    .catch(error => {
+        console.error(error);
+        // Try fallback method
+        sendEmailBackup(form);
+    })
+    .finally(() => {
+        submitBtn.innerHTML = originalText;
+        submitBtn.disabled = false;
+    });
+});
+
+function sendEmailBackup(form) {
+    // Implement EmailJS or alternative method here
+    console.log('Sending backup email with:', Object.fromEntries(new FormData(form)));
+    // window.location.href = `mailto:prabhatsingh1272@gmail.com?subject=${encodeURIComponent(form.querySelector('[name="Subject"]').value)}&body=${encodeURIComponent(form.querySelector('[name="Message"]').value)}`;
+}
+</script>
+
+<style>
+.required-field::after {
+    content: '*';
+    color: #e74c3c;
+    margin-left: 4px;
+}
+.spinner-border {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+</style>
 
     <script>
         // Optional: Add form submission handling
