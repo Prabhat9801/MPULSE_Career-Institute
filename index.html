@@ -690,12 +690,29 @@
     </section>
 
     <!-- Contact Section -->
-<!-- Updated Contact Form Section -->
+<!-- Contact Section -->
 <section id="contact" class="py-5 bg-dark text-white">
     <div class="container">
         <div class="row">
             <div class="col-lg-5 mb-4 mb-lg-0">
-                <!-- ... (keep your existing contact info) ... -->
+                <h2 class="fw-bold mb-4">Contact Us</h2>
+                <div class="mb-4">
+                    <h5><i class="fas fa-map-marker-alt me-2"></i> Address</h5>
+                    <p>31, 3rd Cross Rd, beside Navachethana Hospital, RWF West Colony, Yelahanka New Town,
+                        Bengaluru, Karnataka 560063</p>
+                </div>
+                <div class="mb-4">
+                    <h5><i class="fas fa-phone me-2"></i> Phone</h5>
+                    <p>+91 9164428448 or +91 9964476659</p>
+                </div>
+                <div class="mb-4">
+                    <h5><i class="fas fa-envelope me-2"></i> Email</h5>
+                    <p>info@mpulse.edu.in</p>
+                </div>
+                <div class="mb-4">
+                    <h5><i class="fas fa-clock me-2"></i> Working Hours</h5>
+                    <p>Monday - Saturday: 8:00 AM - 8:00 PM</p>
+                </div>
             </div>
             <div class="col-lg-7">
                 <div class="card shadow">
@@ -704,13 +721,11 @@
                         <form id="contactForm" action="https://formsubmit.co/prabhatkumarsictc7070@gmail.com" method="POST">
                             <!-- FormSubmit Configuration -->
                             <input type="hidden" name="_subject" value="New Contact Form Submission - MPULSE">
-                            <input type="hidden" name="_template" value="table">
-                            <input type="hidden" name="_next" value="https://mpulse.org.in/thank-you.html">
-                            <input type="hidden" name="_autoresponse" value="Thank you for contacting MPULSE Career Institute. We'll respond within 24 hours.">
                             <input type="hidden" name="_captcha" value="false">
-                            <input type="text" name="_honey" style="display:none"> <!-- Honeypot for spam -->
+                            <input type="hidden" name="_next" value="https://mpulse.org.in/thank-you.html">
+                            <!-- Honey pot spam prevention -->
+                            <input type="text" name="_honey" style="display:none">
 
-                            <!-- Form Fields -->
                             <div class="row">
                                 <div class="col-md-6 mb-3">
                                     <label for="contactName" class="form-label required-field">Name</label>
@@ -738,48 +753,38 @@
     </div>
 </section>
 
-<!-- Enhanced Submission Script -->
+<!-- Replace the current contact form script with this simpler version -->
 <script>
-document.getElementById('contactForm').addEventListener('submit', async function(e) {
-    e.preventDefault();
-    const form = e.target;
-    const submitBtn = form.querySelector('button[type="submit"]');
+document.getElementById('contactForm').addEventListener('submit', function() {
+    const submitBtn = this.querySelector('button[type="submit"]');
     const originalText = submitBtn.innerHTML;
-
+    
     // Show loading state
     submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...';
     submitBtn.disabled = true;
-
-    try {
-        // Submit to FormSubmit
-        const response = await fetch(form.action, {
-            method: 'POST',
-            body: new FormData(form),
-            headers: { 'Accept': 'application/json' }
-        });
-
-        const data = await response.json();
-        console.log('FormSubmit response:', data);
-
-        if (response.ok) {
-            alert('Thank you! Your message has been sent successfully.');
-            form.reset();
-            
-            // Redirect to thank-you page
-            const nextUrl = form.querySelector('[name="_next"]').value;
-            if (nextUrl) window.location.href = nextUrl;
-        } else {
-            throw new Error(data.message || 'Form submission failed');
-        }
-    } catch (error) {
-        console.error('Submission error:', error);
-        alert('We encountered an issue. Please try again or contact us directly at info@mpulse.edu.in');
-    } finally {
+    
+    // Enable button after 3 seconds in case form submission takes time
+    setTimeout(() => {
         submitBtn.innerHTML = originalText;
         submitBtn.disabled = false;
-    }
+    }, 3000);
+    
+    // Let the form submit naturally to FormSubmit
+    console.log('Contact form submitted to FormSubmit');
 });
 </script>
+
+<style>
+.required-field::after {
+    content: '*';
+    color: #e74c3c;
+    margin-left: 4px;
+}
+.spinner-border {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+</style>
 
     <!-- Map Section -->
     <div class="map-container">
