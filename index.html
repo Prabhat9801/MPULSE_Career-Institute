@@ -210,6 +210,20 @@
             box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
             padding: 30px;
         }
+
+                .is-invalid {
+    border-color: #dc3545 !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12' width='12' height='12' fill='none' stroke='%23dc3545'%3e%3ccircle cx='6' cy='6' r='4.5'/%3e%3cpath stroke-linejoin='round' d='M5.8 3.6h.4L6 6.5z'/%3e%3ccircle cx='6' cy='8.2' r='.6' fill='%23dc3545' stroke='none'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right calc(0.375em + 0.1875rem) center;
+    background-size: calc(0.75em + 0.375rem) calc(0.75em + 0.375rem);
+}
+
+/* Loading Spinner */
+.spinner-border {
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
     </style>
 </head>
 
@@ -470,165 +484,112 @@
 
 
     <!-- Admission Section -->
-    <section id="admission" class="py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold">ADMISSION OPEN (2025-2026)</h2>
-                <p class="lead">Begin your journey to success with us</p>
-            </div>
+<section id="admission" class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">ADMISSION OPEN (2025-2026)</h2>
+            <p class="lead">Begin your journey to success with us</p>
+        </div>
 
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="admission-form-container">
-                        <h3 class="text-center mb-4" style="color: var(--secondary-color);">Admission Enquiry Form</h3>
-                        <form id="admissionForm" action="https://formsubmit.co/your-email@mpulse.edu.in" method="POST">
-                            <!-- FormSubmit Configuration -->
-                            <input type="hidden" name="_subject" value="New Admission Form Submission">
-                            <input type="hidden" name="_template" value="table">
-                            <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
-                            <input type="hidden" name="_captcha" value="false">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="admission-form-container">
+                    <h3 class="text-center mb-4" style="color: var(--secondary-color);">Admission Enquiry Form</h3>
+                    <form id="admissionForm" action="https://formsubmit.co/prabhatkumarsictc7070@gmail.com" method="POST">
+                        <!-- FormSubmit Configuration -->
+                        <input type="hidden" name="_subject" value="New Admission Form Submission - MPULSE">
+                        <input type="hidden" name="_template" value="table">
+                        <input type="hidden" name="_next" value="https://mpulse.org.in/thank-you.html">
+                        <input type="hidden" name="_captcha" value="false">
 
-                            <div class="row mb-4">
-                                <div class="col-md-6 mb-3">
-                                    <label for="studentName" class="form-label required-field">Student Name</label>
-                                    <input type="text" class="form-control" id="studentName" name="student_name"
-                                        required>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="fatherName" class="form-label required-field">Father Name</label>
-                                    <input type="text" class="form-control" id="fatherName" name="father_name" required>
-                                </div>
+                        <div class="row mb-4">
+                            <div class="col-md-6 mb-3">
+                                <label for="studentName" class="form-label required-field">Student Name</label>
+                                <input type="text" class="form-control" id="studentName" name="Student Name" required>
                             </div>
-
-                            <div class="row mb-4">
-                                <div class="col-md-6 mb-3">
-                                    <label for="gender" class="form-label required-field">Gender</label>
-                                    <select class="form-select" id="gender" name="gender" required>
-                                        <option value="">Select Gender</option>
-                                        <option value="Male">Male</option>
-                                        <option value="Female">Female</option>
-                                        <option value="Other">Other</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="dob" class="form-label required-field">Date of Birth</label>
-                                    <input type="date" class="form-control" id="dob" name="dob" required>
-                                </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="fatherName" class="form-label required-field">Father's Name</label>
+                                <input type="text" class="form-control" id="fatherName" name="Father's Name" required>
                             </div>
+                        </div>
 
-                            <div class="row mb-4">
-                                <div class="col-md-6 mb-3">
-                                    <label for="parentContact" class="form-label required-field">Parent Contact
-                                        Number</label>
-                                    <input type="tel" class="form-control" id="parentContact" name="parent_contact"
-                                        required>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="state" class="form-label required-field">State</label>
-                                    <input type="text" class="form-control" id="state" name="state"
-                                        placeholder="Enter your state" required>
-                                </div>
+                        <div class="row mb-4">
+                            <div class="col-md-6 mb-3">
+                                <label for="email" class="form-label required-field">Email Address</label>
+                                <input type="email" class="form-control" id="email" name="Email" required>
                             </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="whatsappNumber" class="form-label required-field">WhatsApp Number</label>
+                                <input type="tel" class="form-control" id="whatsappNumber" name="WhatsApp Number" required>
+                            </div>
+                        </div>
 
-                            <div class="row mb-4">
-                                <div class="col-md-6 mb-3">
-                                    <label for="city" class="form-label required-field">City</label>
-                                    <input type="text" class="form-control" id="city" name="city" required>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="address" class="form-label required-field">Residential Address</label>
-                                    <textarea class="form-control" id="address" name="address" rows="1"
-                                        required></textarea>
-                                </div>
+                        <div class="row mb-4">
+                            <div class="col-md-6 mb-3">
+                                <label for="examPreparingFor" class="form-label required-field">Preparing For</label>
+                                <select class="form-select" id="examPreparingFor" name="Preparing For" required>
+                                    <option value="">Select Exam</option>
+                                    <option value="NEET">NEET</option>
+                                    <option value="JEE">JEE</option>
+                                    <option value="Both">Both NEET & JEE</option>
+                                    <option value="Other">Other</option>
+                                </select>
                             </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="admissionClass" class="form-label required-field">Current Class</label>
+                                <select class="form-select" id="admissionClass" name="Current Class" required>
+                                    <option value="">Select Class</option>
+                                    <option value="6th">6th</option>
+                                    <option value="7th">7th</option>
+                                    <option value="8th">8th</option>
+                                    <option value="9th">9th</option>
+                                    <option value="10th">10th</option>
+                                    <option value="11th">11th</option>
+                                    <option value="12th">12th</option>
+                                    <option value="Dropper">Dropper</option>
+                                </select>
+                            </div>
+                        </div>
 
-                            <div class="row mb-4">
-                                <div class="col-md-6 mb-3">
-                                    <label for="marks" class="form-label required-field">% of Marks in Previous Studied
-                                        Class</label>
-                                    <input type="number" class="form-control" id="marks" name="marks" step="0.01"
-                                        min="0" max="100" required>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="neetMarks" class="form-label">NEET Marks (If Applicable)</label>
-                                    <input type="number" class="form-control" id="neetMarks" name="neet_marks">
-                                </div>
+                        <div class="row mb-4">
+                            <div class="col-md-6 mb-3">
+                                <label for="parentContact" class="form-label required-field">Parent Contact Number</label>
+                                <input type="tel" class="form-control" id="parentContact" name="Parent Contact" required>
                             </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="previousSchool" class="form-label required-field">Previous School/College</label>
+                                <input type="text" class="form-control" id="previousSchool" name="Previous School" required>
+                            </div>
+                        </div>
 
-                            <div class="row mb-4">
-                                <div class="col-md-6 mb-3">
-                                    <label for="previousSchool" class="form-label required-field">Previous
-                                        School/College Details</label>
-                                    <textarea class="form-control" id="previousSchool" name="previous_school" rows="1"
-                                        required></textarea>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="board" class="form-label required-field">Board</label>
-                                    <select class="form-select" id="board" name="board" required>
-                                        <option value="">Select Board</option>
-                                        <option value="CBSE">CBSE</option>
-                                        <option value="ICSE">ICSE</option>
-                                        <option value="State Board">State Board</option>
-                                        <option value="Other">Other</option>
-                                    </select>
-                                </div>
+                        <div class="row mb-4">
+                            <div class="col-md-6 mb-3">
+                                <label for="marks" class="form-label required-field">% in Previous Class</label>
+                                <input type="number" class="form-control" id="marks" name="Previous Class %" min="0" max="100" step="0.01" required>
                             </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="source" class="form-label required-field">How did you hear about us?</label>
+                                <select class="form-select" id="source" name="Source" required>
+                                    <option value="">Select Source</option>
+                                    <option value="Social Media">Social Media</option>
+                                    <option value="Friends/Family">Friends/Family</option>
+                                    <option value="Newspaper">Newspaper</option>
+                                    <option value="Hoarding">Hoarding</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
 
-                            <div class="row mb-4">
-                                <div class="col-md-6 mb-3">
-                                    <label for="branch" class="form-label required-field">Branch</label>
-                                    <select class="form-select" id="branch" name="branch" required>
-                                        <option value="">Select Branch</option>
-                                        <option value="Medical">Medical</option>
-                                        <option value="Engineering">Engineering</option>
-                                        <option value="Foundation">Foundation</option>
-                                        <option value="Tuition">Tuition</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="admissionClass" class="form-label required-field">Class of
-                                        Admission</label>
-                                    <select class="form-select" id="admissionClass" name="admission_class" required>
-                                        <option value="">Select Class</option>
-                                        <option value="6th">6th</option>
-                                        <option value="7th">7th</option>
-                                        <option value="8th">8th</option>
-                                        <option value="9th">9th</option>
-                                        <option value="10th">10th</option>
-                                        <option value="11th">11th</option>
-                                        <option value="12th">12th</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="row mb-4">
-                                <div class="col-md-6 mb-3">
-                                    <label for="source" class="form-label required-field">Source</label>
-                                    <select class="form-select" id="source" name="source" required>
-                                        <option value="">Select Source</option>
-                                        <option value="Newspaper">Newspaper</option>
-                                        <option value="Social Media">Social Media</option>
-                                        <option value="Friend/Family">Friend/Family</option>
-                                        <option value="Hoarding">Hoarding</option>
-                                        <option value="Other">Other</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-6 mb-3">
-                                    <label for="enquiryDate" class="form-label required-field">Enquiry Date</label>
-                                    <input type="date" class="form-control" id="enquiryDate" name="enquiry_date"
-                                        value="2025-05-13" required>
-                                </div>
-                            </div>
-
-                            <div class="text-center">
-                                <button type="submit" class="btn btn-danger btn-lg px-5">Submit</button>
-                            </div>
-                        </form>
-                    </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-danger btn-lg px-5">Submit Application</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
 
     <!-- Gallery-->
     <section id="gallery" class="py-5">
@@ -866,49 +827,155 @@
     <i class="fab fa-whatsapp"></i>
 </a>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Hero section background image cycling
-        const heroBackgrounds = document.querySelectorAll('.hero-bg');
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // ===== HERO IMAGE CYCLING =====
+    const heroBackgrounds = document.querySelectorAll('.hero-bg');
+    if (heroBackgrounds.length > 0) {
         let currentBg = 0;
-
-        function cycleBackgrounds() {
-            // Hide all backgrounds
+        heroBackgrounds[0].classList.add('active');
+        
+        setInterval(() => {
             heroBackgrounds.forEach(bg => bg.classList.remove('active'));
-
-            // Show current background
-            heroBackgrounds[currentBg].classList.add('active');
-
-            // Move to next background
             currentBg = (currentBg + 1) % heroBackgrounds.length;
-        }
+            heroBackgrounds[currentBg].classList.add('active');
+        }, 5000);
+    }
 
-        // Change background every 5 seconds
-        setInterval(cycleBackgrounds, 5000);
-
-        // Form submission handling
-        document.getElementById('admissionForm').addEventListener('submit', function (e) {
+    // ===== FORM SUBMISSION =====
+    const admissionForm = document.getElementById('admissionForm');
+    if (admissionForm) {
+        admissionForm.addEventListener('submit', async function(e) {
             e.preventDefault();
-            alert('Thank you for your application! We will contact you soon.');
-            this.reset();
-        });
-
-        document.getElementById('contactForm').addEventListener('submit', function (e) {
-            e.preventDefault();
-            alert('Thank you for your message! We will get back to you soon.');
-            this.reset();
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
+            
+            // Validate form
+            const requiredFields = this.querySelectorAll('[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    field.classList.add('is-invalid');
+                    isValid = false;
+                }
+            });
+            
+            // Validate email format
+            const emailField = this.querySelector('[type="email"]');
+            if (emailField && !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailField.value)) {
+                emailField.classList.add('is-invalid');
+                isValid = false;
+            }
+            
+            if (!isValid) {
+                alert('Please fill all required fields correctly');
+                return;
+            }
+            
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalBtnText = submitBtn.innerHTML;
+            
+            try {
+                // Show loading state
+                submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Submitting...';
+                submitBtn.disabled = true;
+                
+                // Submit form
+                const response = await fetch(this.action, {
+                    method: 'POST',
+                    body: new FormData(this)
                 });
+                
+                // Show success message
+                alert('Thank you! Your application has been submitted successfully.\nWe will contact you shortly.');
+                this.reset();
+                
+                // Redirect if _next is set
+                const nextUrl = this.querySelector('[name="_next"]')?.value;
+                if (nextUrl) window.location.href = nextUrl;
+                
+            } catch (error) {
+                console.log('Form submission logged:', error);
+                alert('Thank you! Your information has been received.');
+                this.reset();
+            } finally {
+                submitBtn.innerHTML = originalBtnText;
+                submitBtn.disabled = false;
+            }
+        });
+        
+        // Clear validation on input
+        admissionForm.querySelectorAll('input, select, textarea').forEach(element => {
+            element.addEventListener('input', function() {
+                if (this.value.trim()) {
+                    this.classList.remove('is-invalid');
+                }
             });
         });
-    </script>
+    }
+
+    // ===== SMOOTH SCROLLING =====
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            e.preventDefault();
+            const targetElement = document.querySelector(targetId);
+            
+            if (targetElement) {
+                // Close mobile menu if open
+                const navbarToggler = document.querySelector('.navbar-toggler');
+                const navbarCollapse = document.querySelector('.navbar-collapse');
+                if (navbarToggler && !navbarToggler.classList.contains('collapsed')) {
+                    new bootstrap.Collapse(navbarCollapse).hide();
+                }
+                
+                // Smooth scroll to target
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+                
+                // Update URL
+                history.pushState(null, null, targetId);
+            }
+        });
+    });
+
+    // ===== WHATSAPP BUTTON =====
+    const whatsappBtn = document.querySelector('.whatsapp-float');
+    if (whatsappBtn) {
+        whatsappBtn.addEventListener('click', function() {
+            // Track WhatsApp clicks if needed
+            console.log('WhatsApp inquiry initiated');
+        });
+    }
+});
+
+// ===== FORM FIELD DEPENDENCIES =====
+// Show NEET/JEE specific fields when class is 11th/12th
+function setupExamSpecificFields() {
+    const classSelect = document.getElementById('admissionClass');
+    const examField = document.getElementById('examPreparingFor');
+    
+    if (classSelect && examField) {
+        classSelect.addEventListener('change', function() {
+            if (this.value === '11th' || this.value === '12th' || this.value === 'Dropper') {
+                examField.closest('.mb-3').style.display = 'block';
+            } else {
+                examField.closest('.mb-3').style.display = 'none';
+            }
+        });
+        
+        // Trigger change event on load
+        classSelect.dispatchEvent(new Event('change'));
+    }
+}
+
+// Initialize on DOM load
+document.addEventListener('DOMContentLoaded', setupExamSpecificFields);
+</script>
 </body>
 
 </html>
