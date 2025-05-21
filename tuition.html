@@ -13,7 +13,27 @@
             --accent-color: #3498db;
             --light-color: #ecf0f1;
         }
-        
+         .logo-text-combo {
+    display: flex;
+    align-items: center;
+    position: relative; /* Added for absolute positioning */
+}
+
+.logo-image {
+    height: 38px;
+    margin-right: -15px; /* Increased negative margin */
+    position: relative; /* For z-index to work */
+    z-index: 1; /* Ensure logo stays above */
+}
+
+.brand-text {
+    font-weight: 600;
+    font-size: 1.5rem;
+    white-space: nowrap;
+    letter-spacing: -0.5px;
+    position: relative;
+    margin-left: -4px; /* Pull text from left side too */
+}
         .hero-tuition {
             background: linear-gradient(rgba(44, 62, 80, 0.8), rgba(44, 62, 80, 0.8)), 
                         url('https://images.unsplash.com/photo-1588072432836-e10032774350?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
@@ -88,11 +108,11 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <div class="d-flex align-items-center">
-                    <img src="logo.jpg" alt="MPULSE Logo" height="45" width="45" class="me-2">
-                    <h2 class="mb-0"><span style="color: #e74c3c;">MPULSE</span> CAREER INSTITUTE</h2>
-                </div>
-            </a>
+            <div class="logo-text-combo">
+                <img src="logo.png" alt="M Logo" height="38" class="logo-image">
+                <span class="brand-text"><span style="color: #3cb3ad;">MPULSE</span> CAREER INSTITUTE</span>
+            </div>
+        </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
